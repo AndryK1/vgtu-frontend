@@ -18,6 +18,8 @@
 /public/storage
 /storage/*.key
 /storage/pail
+php artisan serve
+
 /vendor
 Homestead.json
 Homestead.yaml
