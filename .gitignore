@@ -20,7 +20,8 @@
 /storage/pail
 php artisan serve
 
-/vendor
+
+vendor/
 Homestead.json
 Homestead.yaml
 Thumbs.db

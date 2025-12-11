@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EducationalProgramController;
 
-Route::get('/', function () {
-    return view('layouts.app');
-});
+Route::get('/', [EducationalProgramController::class, 'list']);
+Route::get('/programs', [EducationalProgramController::class, 'list']);
+
+Route::get('/programs/table', [EducationalProgramController::class, 'index']);
