@@ -1,0 +1,108 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.vstu-header {
+    width: 100%;
+}
+
+/* Верхнее меню */
+.vstu-top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f2f5;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 8px 40px;
+    font-size: 15px;
+}
+
+.vstu-top-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.vstu-top-menu li {
+    color: #4a4a4a;
+}
+
+.vstu-lang {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.vstu-lang .flag {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background: linear-gradient(to bottom, white 33%, blue 33%, blue 66%, red 66%);
+    margin-left: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Средняя часть */
+.vstu-middle {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.vstu-logo {
+    height: 70px;
+}
+
+.vstu-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2b44;
+    line-height: 1.2;
+}
+
+.vstu-link {
+    margin-left: auto;
+    color: #1d2b44;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.vstu-search {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+/* Нижняя навигация */
+.vstu-bottom-menu {
+    background: #1d2b44;
+}
+
+.vstu-bottom-menu ul {
+    list-style: none;
+    padding: 10px 40px;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.vstu-bottom-menu li {
+    color: white;
+    font-size: 15px;
+    position: relative;
+}
+
+.vstu-bottom-menu li:not(:first-child)::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #6e6e6e;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
